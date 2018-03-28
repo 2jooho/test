@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>gride system</title>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </head>
+  <body>
+<div class="container" style="margin-top:20px;">
+<div class="row">
+  <div class="col-sm-8 col-xs-6" ><div class="alert alert-primary" role="alert" id="book" >
+  저녁밥?
+</div></div>
+  <div class="col-sm-4 col-xs-6" ><div class="alert alert-secondary" role="alert" id="div">
+  커피?
+</div></div>
+ <div class="col-sm-4 col-xs-6 offset-sm-8"  ><div class="alert alert-primary" role="alert" id="clickme" >
+  땡기면!
+</div></div>
+<div class="col-sm-4 col-xs-6 offset-sm-8" ><div class="alert alert-secondary" role="alert" id="a" >
+  먹자!
+</div></div>
+</div>
+</div>
+    <script>
+      $( "#clickme" ).click(function() {
+       $( "#book" ).fadeOut( "slow", function() {
+      // Animation complete.
+       });
+    });
+    </script>
+    <script>
+ $( "#a" ).click(function() {
+       $( "#div" ).fadeIn( 3000, function() {
+      // Animation complete.
+       });
+    });
+</script>
+  </body>
+</html>
